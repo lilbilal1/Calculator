@@ -1,17 +1,5 @@
 const display=document.getElementById("display");
-document.addEventListener('keydown', function(event) {
-    if (event.key >= '0' && event.key <= '9') {
-        var currentValue = document.getElementById('display').value;
 
-        var newValue = currentValue + event.key;
-        document.getElementById('display').value = newValue;
-    }
-    else if (event.key === 'Delete' || event.key === 'Backspace') {
-        var currentValue = document.getElementById('display').value;
-        var newValue = currentValue.slice(0, -1);
-        document.getElementById('display').value = newValue;
-    }
-});
 function appendToDisplay(input){
     display.value+=input
 }
